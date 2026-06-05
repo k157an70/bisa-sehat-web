@@ -1,0 +1,11 @@
+{
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+
+  "js/ts.tsserver.experimental.enableProjectDiagnostics": true,
+
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
