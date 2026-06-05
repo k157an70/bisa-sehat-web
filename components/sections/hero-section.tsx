@@ -37,15 +37,10 @@ export default function HeroSection() {
 
             {/* TRUST BADGES */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-500 lg:justify-start">
-
               <span>✓ Professional Team</span>
-
               <span>✓ Corporate Healthcare</span>
-
               <span>✓ Fast Response</span>
-
             </div>
-
           </div>
           {/* RIGHT CONTENT */}
           <div>
