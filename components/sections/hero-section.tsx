@@ -47,7 +47,6 @@ export default function HeroSection() {
             </div>
 
           </div>
-
           {/* RIGHT CONTENT */}
           <div>
             <div className="aspect-square rounded-4xl bg-linear-to-br from-sky-100 to-slate-100 p-6 shadow-sm">
