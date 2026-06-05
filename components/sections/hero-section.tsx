@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
-    <section className="section-padding bg-linear-to-b from-white to-slate-50">
+    <section id="beranda" className="section-padding bg-linear-to-b from-white to-slate-50">
       <div className="container-custom">
         <div className="grid items-center gap-16 lg:grid-cols-2">
 
@@ -43,28 +45,38 @@ export default function HeroSection() {
             </div>
           </div>
           {/* RIGHT CONTENT */}
-          <div>
-            <div className="aspect-square rounded-4xl bg-linear-to-br from-sky-100 to-slate-100 p-6 shadow-sm">
+          <div className="relative">
 
-              <div className="flex h-full items-center justify-center rounded-3xl border border-white/60 bg-white/60 backdrop-blur">
+            <div className="relative aspect-square overflow-hidden rounded-[32px] shadow-2xl">
 
-                <span className="text-sm font-medium text-slate-400">
-                  Healthcare Illustration
-                  <div className="absolute left-6 top-6 rounded-2xl bg-white p-4 shadow-lg">
-                    <p className="text-sm font-semibold text-slate-900">
-                      500+ MCU Perusahaan
-                    </p>
-                    <p className="mt-1 text-xs text-slate-500">
-                      Trusted healthcare partner
-                    </p>
-                  </div>
-                </span>
+              <Image
+                src="/images/hero-healthcare.jpg"
+                alt="Healthcare Professional"
+                width={700}
+                height={700}
+                priority
+                className="h-full w-full object-cover"
+              />
 
-              </div>
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-linear-to-t from-slate-900/20 to-transparent" />
 
             </div>
-          </div>
 
+            {/* FLOATING CARD */}
+            <div className="absolute left-6 top-6 rounded-2xl bg-white p-4 shadow-xl">
+
+              <p className="text-sm font-semibold text-slate-900">
+                500+ MCU Perusahaan
+              </p>
+
+              <p className="mt-1 text-xs text-slate-500">
+                Trusted healthcare partner
+              </p>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
